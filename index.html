@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Developer Test 4</title>
+</head>
+<body>
+
+<form action=''>
+    <label for="first_name">
+        <span>Name</span>
+    <input type="text" size="13" id="first_name" maxlength="13" name="f_name">
+    </label>
+
+    <label for="last_name">
+        <span>Last Name</span>
+        <input type="text" size="13" id="last_name" maxlength="13" name="l_name">
+    </label>
+
+    <label for="d_id">
+        <span>Document ID</span>
+        <input type="text" size="13" id="d_id" maxlength="13" name="d_id">
+    </label>
+</form>
+
+<br>
+    <button id="Create" onclick="addRow()"> Create </button>
+
+<br>
+    <label for="row">
+        <span># Row</span>
+        <input type="text" size="11" id="row" maxlength="11" name="row_id">
+    </label>
+
+<br>
+    <button id="Update" onclick="updRow()"> Update </button>
+
+<br>
+    <button id="Delete" onclick="delRow()"> Delete </button>
+
+<br>
+    <button id="Select" onclick="selRow()"> Select </button>
+
+<br>
+    <button id="Save" onclick="save()"> Save Changes </button>
+    <button id="Clear" onclick="clear()"> Clear All </button>
+
+<table id="tblResultados">
+    <thead>
+    <tr>
+        <th>||  id  ||</th>
+        <th>||  name  ||</th>
+        <th>||  last name  ||</th>
+        <th>||  document id  ||</th>
+    </tr>
+    </thead>
+    <tbody id="tbdData"></tbody>
+</table>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="activator.js"></script>
+</html>
